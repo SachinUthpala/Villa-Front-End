@@ -37,6 +37,7 @@
   --text-granite-gray: hsl(210, 4%, 38%);
   --text-majorelle-blue: hsl(249, 95%, 63%);
   --text-sunglow: hsl(48, 100%, 50%);
+  --text-avilable: hsl(120, 100%, 50%);
 
   /* border color */
   --border-gainsboro: hsl(0, 1%, 85%);
@@ -748,6 +749,53 @@ img {
 }
 
 /*-----------------------------------*\
+  #Our rooms
+\*-----------------------------------*/
+
+.rooms .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rooms .container img {
+  border-radius: 10px;
+  width: 300px;
+}
+
+.room-title {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.room-title .availability {
+  font-size: small;
+  padding: 5px 10px;
+  color: var(--text-avilable);
+  border: 1px solid var(--text-avilable);
+  border-radius: var(--radius-pill);
+}
+
+.room-btn {
+  text-align: center;
+  padding: 10px 20px;
+  color: var(--bg-majorelle-blue);
+  border: 1px solid var(--bg-majorelle-blue);
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: var(--transition-1);
+  margin-bottom: 60px;
+}
+
+.room-btn:is(:hover, :focus-visible) {
+  background: var(--bg-ocean-blue);
+  color: #fff;
+}
+
+/*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
 
@@ -794,6 +842,20 @@ img {
     gap: 20px;
     align-items: center;
   }
+
+  .rooms .container img {
+    margin-block-start: 20px;
+    width: 500px;
+  }
+
+  .room-title {
+    gap: 100px;
+    margin-block-end: 20px;
+  }
+}
+
+.pc{
+  display: none;
 }
 
 /*responsive for 768px*/
@@ -875,6 +937,22 @@ img {
   .copyright {
     margin-block-end: 0;
   }
+
+  .rooms .container img {
+    margin-block-start: 30px;
+    width: 600px;
+  }
+
+  .room-title {
+    gap: 150px;
+    margin-block-end: 30px;
+  }
+
+  .room-btn {
+    padding: 10px 30px;
+  }
+
+
 }
 
 /*responsive for 992px  */
@@ -971,12 +1049,36 @@ img {
     gap: 0;
     align-items: flex-start;
   }
+
+  .rooms .container img {
+    margin-block-start: 40px;
+    width: 700px;
+  }
+
+  .room-title {
+    font-size: xxx-large;
+  }
+
+  .room-title .availability {
+    font-size: medium;
+    padding: 10px 20px;
+    color: var(--text-avilable);
+    border: 2px solid var(--text-avilable);
+    border-radius: var(--radius-pill);
+  }
+
+            .pc {
+              display: block;
+            }
+      
+            .mobile {
+              display: none;
+            }
 }
 
 /*responsive for 1200px */
 
 @media (min-width: 1200px) {
-
   .container {
     max-width: 1150px;
   }
@@ -993,45 +1095,75 @@ img {
     gap: 40px;
   }
 
-  .hero-title{
+  .hero-title {
     margin-block: 30px;
   }
 
-  .hero-text{
+  .hero-text {
     margin-block-end: 50px;
   }
 
-  .cta-card{
+  .cta-card {
     padding-block: 120px;
   }
 
   /*for footer */
-    .footer-top {
-      grid-template-columns: 1fr 0.5fr 0.6fr 0.6fr 1fr;
-      gap: 60px;
-    }
-  
-    .footer-brand .footer-text {
-      margin-block: 35px 30px;
+  .footer-top {
+    grid-template-columns: 1fr 0.5fr 0.6fr 0.6fr 1fr;
+    gap: 60px;
+  }
+
+  .footer-brand .footer-text {
+    margin-block: 35px 30px;
+  }
+
+  .footer-list-title {
+    margin-block-end: 25px;
+  }
+
+  .footer-bottom-list {
+    gap: 40px;
+  }
+
+
+    .rooms .container img {
+      margin-block-start: 40px;
+      width: 900px;
     }
 
-        .footer-list-title {
-          margin-block-end: 25px;
-        }
-    
-        .footer-bottom-list {
-          gap: 40px;
-        }
+    .rooms .secondary-text{
+      font-size: larger;
+    }
+
+                .pc {
+                  display: block;
+                }
+        
+                .mobile {
+                  display: none;
+                }
 }
 
 /*responsive for max width 1400px */
 
-@media (min-width: 1400px){
-  .container{
+@media (min-width: 1400px) {
+  .container {
     max-width: 1650px;
   }
 
-  .header{
+  .header {
     width: 100%;
   }
+
+    .rooms .secondary-text {
+      font-size: larger;
+    }
+
+    .pc{
+      display: block;
+    }
+
+    .mobile{
+      display: none;
+    }
 }

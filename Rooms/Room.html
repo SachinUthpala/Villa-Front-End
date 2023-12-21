@@ -29,12 +29,12 @@
     />
 
     <!--custome css-->
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
 
     <!--
         preload images
     -->
-    <link rel="preload" as="image" href="./assets/images/preloader.svg" />
+    <link rel="preload" as="image" href="../assets/images/preloader.svg" />
   </head>
   <body>
 
@@ -44,7 +44,7 @@
     <div class="preloader" data-preloader>
       <div class="preloader-inner">
         <img
-          src="./assets/images/preloader.svg"
+          src="../assets/images/preloader.svg"
           width="50"
           height="50"
           alt=""
@@ -57,7 +57,7 @@
       <div class="container">
         <a href="#" class="logo">
           <img
-            src="./assets/images/logo.png"
+            src="../assets/images/logo.png"
             alt="logo"
             width="187"
             height="38"
@@ -69,7 +69,7 @@
           <div class="navbar-top">
             <a href="#" class="logo">
               <img
-                src="./assets/images/logo.png"
+                src="../assets/images/logo.png"
                 alt="logo"
                 width="187"
                 height="38"
@@ -88,10 +88,10 @@
           <!--menu icons-->
           <ul class="navbar-list">
             <li class="navbar-item">
-              <a href="#" class="navbar-link active">Home</a>
+              <a href="../index.html" class="navbar-link ">Home</a>
             </li>
             <li class="navbar-item">
-              <a href="./Rooms/Room.html" class="navbar-link">Rooms</a>
+              <a href="#" class="navbar-link active">Rooms</a>
             </li>
             <li class="navbar-item">
               <a href="#" class="navbar-link">Services</a>
@@ -105,7 +105,7 @@
           </ul>
           <!--header action-->
           <div class="header-action">
-            <a href="./Registration/Registration.html" class="btn btn-primary">LogIn</a>
+            <a href="../Registration/Registration.html" class="btn btn-primary">LogIn</a>
           </div>
         </nav>
 
@@ -129,14 +129,14 @@
         <section
           class="section hero has-bg-image"
           aria-label="hero"
-          style="background-image: url(./assets/images/hero-bg.jpg)"
+          style="background-image: url(../assets/images/hero-bg.jpg)"
         >
           <div class="container">
             <div class="hero-content">
               <p class="hero-subtitle">
                 Explore Sri Lanka
                 <img
-                  src="./assets/images/title-icon.svg"
+                  src="../assets/images/title-icon.svg"
                   alt=""
                   width="20"
                   height="20"
@@ -165,7 +165,7 @@
                 <button class="hero-btn">
                   <div class="btn-img">
                     <img
-                      src="./assets/images/hero-button-img.jpg"
+                      src="../assets/images/hero-button-img.jpg"
                       alt=""
                       width="100"
                       height="100"
@@ -181,7 +181,7 @@
 
             <figure class="hero-banner">
               <img
-                src="./assets/images/hero-banner.png"
+                src="../assets/images/hero-banner.png"
                 class="w-100"
                 alt=""
                 width="631"
@@ -191,6 +191,77 @@
           </div>
         </section>
 
+        <!--
+            our rooms
+        -->
+        <section class="section rooms"
+            style="background-image: url(../assets/images/hero-bg.jpg)">
+            <div class="container">
+                <h2 class="h3 title title-section room-title">
+                    <span>Room 01</span>
+                    <span class="availability">
+                        Avilable
+                    </span>
+                </h2>
+                <p class="section-text" style="display: flex; ">
+                    Price (USD) - <span style="color: hsl(249, 95%, 63%);">150$/Day</span>
+                </p><br>
+                <p class="secondary-text" style="text-align: center;">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem aut expedita modi vero error. Officia ipsa,
+                    dolore animi qui explicabo, et excepturi aperiam possimus repellat quae eaque aspernatur fuga at!
+                </p>
+                <img src="../assets/images/room1.jpg" alt="" class="room-img">
+                <br>
+                <button class="room-btn" onclick="location.href='./Room1/Room1.html'">More Info</button>
+
+                
+            </div>
+
+            <div class="container">
+                <h2 class="h3 title title-section room-title">
+                    <span>Room 02</span>
+                    <span class="availability">
+                        Avilable
+                    </span>
+                </h2>
+                <p class="section-text" style="display: flex; ">
+                    Price (USD) - <span style="color: hsl(249, 95%, 63%);">150$/Day</span>
+                </p><br>
+                <p class="secondary-text" style="text-align: center;">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem aut expedita modi vero error. Officia ipsa,
+                    dolore animi qui explicabo, et excepturi aperiam possimus repellat quae eaque aspernatur fuga at!
+                </p>
+                <img src="../assets/images/room3.jpg"  alt="" class="room-img">
+                <br>
+                <button class="room-btn">More Info</button>
+            
+            
+            </div>
+
+            <div class="container">
+                <h2 class="h3 title title-section room-title">
+                    <span>Room 03</span>
+                    <span class="availability">
+                        Avilable
+                    </span>
+                </h2>
+                <p class="section-text" style="display: flex; ">
+                    Price (USD) - <span style="color: hsl(249, 95%, 63%);">150$/Day</span>
+                </p>
+                <br>
+                <p class="secondary-text" style="text-align: center;">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem aut expedita modi vero error. Officia ipsa, dolore animi qui explicabo, et excepturi aperiam possimus repellat quae eaque aspernatur fuga at!
+                </p>
+                <br>
+                <img src="../assets/images/room2.jpg"  alt="" class="room-img">
+                <br>
+                <button class="room-btn">More Info</button>
+            
+            
+            </div>
+
+
+        </section>
         <!--
                 services
             -->
@@ -207,7 +278,7 @@
             <div class="service-card">
               <div class="icon-card">
                 <img
-                  src="./assets/images/service-icon-1.svg"
+                  src="../assets/images/service-icon-1.svg"
                   width="60px"
                   height="60px"
                   loading="lazy"
@@ -224,7 +295,7 @@
             <div class="service-card">
               <div class="icon-card">
                 <img
-                  src="./assets/images/service-icon-2.svg"
+                  src="../assets/images/service-icon-2.svg"
                   width="60px"
                   height="60px"
                   loading="lazy"
@@ -241,7 +312,7 @@
             <div class="service-card">
               <div class="icon-card">
                 <img
-                  src="./assets/images/service-icon-3.svg"
+                  src="../assets/images/service-icon-3.svg"
                   width="60px"
                   height="60px"
                   loading="lazy"
@@ -313,108 +384,20 @@
                 </div>
                 
                 <figure class="exp-banner">
-                    <img src="./assets/images/experience-banner.png" alt="" class="w-100" width="550" height="660">
-                    <img src="./assets/images/exp-shape.svg" width="75" height="
+                    <img src="../assets/images/experience-banner.png" alt="" class="w-100" width="550" height="660">
+                    <img src="../assets/images/exp-shape.svg" width="75" height="
                     109" loading="lazy" alt="" class="exp-shape">
                 </figure>
             </div>
         </section>
 
 
-        <!--
-            room fectures
-        -->
-
-        <section class="section service">
-            <div class="container">
-                <div class="title-wrapper">
-                    <p class="section-subtitle">Feactures of our room</p>
-                    <h2 class="h2 title title-section">Best Living For You</h2>
-                    <p class="section-text">
-                        Try a variety of benefits when using our villa service.
-                    </p>
-                </div>
-        
-                <div class="service-card">
-                    <div class="icon-card">
-                        <img src="./assets/images/air-conditioning.webp" width="60px" height="60px" loading="lazy" alt="" />
-                    </div>
-        
-                    <h3 class="h3 title card-title">Air Conditioners</h3>
-                    <p class="card-text">
-                        24/7 unlimited air air-conditioning.
-                    </p>
-                </div>
-        
-                <div class="service-card">
-                    <div class="icon-card">
-                        <img src="./assets/images/bath.webp" width="60px" height="60px" loading="lazy" alt="" />
-                    </div>
-        
-                    <h3 class="h3 title card-title">Hot water</h3>
-                    <p class="card-text">
-                        Our Rooms are included hot water baths.
-                    </p>
-                </div>
-        
-                <div class="service-card">
-                    <div class="icon-card">
-                        <img src="./assets/images/television.webp" width="60px" height="60px" loading="lazy" alt="" />
-                    </div>
-        
-                    <h3 class="h3 title card-title">Television</h3>
-                    <p class="card-text">
-                        International TV service with 50+ channels.
-                    </p>
-                </div>
-
-                <div class="service-card">
-                    <div class="icon-card">
-                        <img src="./assets/images/safe.webp" width="60px" height="60px" loading="lazy" alt="" />
-                    </div>
-                
-                    <h3 class="h3 title card-title">Safe Locker</h3>
-                    <p class="card-text">
-                        Protect your personal things in our locker.
-                    </p>
-                </div>
-
-                <div class="service-card">
-                    <div class="icon-card">
-                        <img src="./assets/images/washing-machine-1.webp" width="60px" height="60px" loading="lazy" alt="" />
-                    </div>
-                
-                    <h3 class="h3 title card-title">Washing Mashine</h3>
-                    <p class="card-text">
-                        Wash and Dry your own cloths.
-                    </p>
-                </div>
-            </div>
-        </section>
+       
 
 
         <!--
             I alreay skipping that destination part because I dont need it
         -->
-
-        <!--
-            cta = call to action 
-        -->
-
-        <section class="section cta">
-            <div class="container">
-                <div class="cta-card has-bg-image" style="background-image: url(./assets/images/cta-bg.jpg);">
-                    <h2 class="h2 title section-title">
-                        Prepare Yourself & Let’s Explore The Beauty Of The World
-                        <img src="./assets/images/title-icon.svg" width="36" height="36" loading="lazy" class="img" alt="">
-                    </h2>
-                    <p class="section-text">
-                        We have many special offers especially for you.
-                    </p>
-                    <a href="#" class="btn btn-primary">Get Started</a>
-                </div>
-            </div>
-        </section>
 
 
 
@@ -432,7 +415,7 @@
 
                 <div class="footer-brand">
                     <a href="#" class="logo">
-                        <img src="./assets/images/logo.png" alt="" 
+                        <img src="../assets/images/logo.png" alt="" 
                         class="logo" width="187" height="40" loading="lazy">
                     </a>
                     <p class="footer-text">
@@ -494,7 +477,7 @@
 
                 </ul>
 
-                <ul class="footer-list"a
+                <ul class="footer-list">
                     <li>
                         <p class="footer-list-title">
                             Company
@@ -598,7 +581,7 @@
         end of landing page
     -->
     <!--custome js icons-->
-    <script src="./assets/js/script.js"></script>
+    <script src="../assets/js/script.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
