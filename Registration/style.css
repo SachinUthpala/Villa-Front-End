@@ -47,7 +47,7 @@
 
 
 
-
+}
 
 
 
@@ -324,7 +324,20 @@ form.sign-in-form {
   pointer-events: all;
 }
 
+.ac-btns{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
 @media (max-width: 870px) {
+
+  .ac-btns{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+
   .container {
     min-height: 800px;
     height: 100vh;

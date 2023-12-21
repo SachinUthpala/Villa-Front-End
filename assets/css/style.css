@@ -858,6 +858,36 @@ img {
   display: none;
 }
 
+    /*-----------------------------------*\
+      #Room galary
+    \*-----------------------------------*/
+
+.imgmore{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 20px;
+}
+
+.img{
+  display: flex;
+  flex-direction: column;
+}
+
+.imgmore h1 , p{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.imgmore .img-container img{
+  width: 253px;
+  height: 203px;
+  margin-block-end: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+
 /*responsive for 768px*/
 
 @media (min-width: 769px) {
@@ -952,6 +982,13 @@ img {
     padding: 10px 30px;
   }
 
+  .img{
+    display: grid;
+    grid-template-columns: repeat(2 , 300px);
+    justify-content: space-between;
+    padding: 50px 70px;
+  }
+  
 
 }
 
@@ -1074,6 +1111,13 @@ img {
             .mobile {
               display: none;
             }
+
+                        .img {
+                          display: grid;
+                          grid-template-columns: repeat(3, 300px);
+                          justify-content: space-between;
+                          padding: 50px 70px;
+                        }
 }
 
 /*responsive for 1200px */
@@ -1142,6 +1186,13 @@ img {
                 .mobile {
                   display: none;
                 }
+
+                                .img {
+                                  display: grid;
+                                  grid-template-columns: repeat(4, 300px);
+                                  justify-content: space-between;
+                                  padding: 50px 70px;
+                                }
 }
 
 /*responsive for max width 1400px */
@@ -1166,4 +1217,15 @@ img {
     .mobile{
       display: none;
     }
+
+        .img {
+          display: grid;
+          grid-template-columns: repeat(4, 300px);
+          justify-content: space-between;
+          padding: 50px 70px;
+        }
 }
+
+
+
+
