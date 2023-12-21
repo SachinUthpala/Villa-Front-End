@@ -27,12 +27,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
     <!--custome css-->
-    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
 
     <!--
         preload images
     -->
-    <link rel="preload" as="image" href="../../assets/images/preloader.svg" />
+    <link rel="preload" as="image" href="../assets/images/preloader.svg" />
 </head>
 
 <body>
@@ -42,7 +42,7 @@
     -->
     <div class="preloader" data-preloader>
         <div class="preloader-inner">
-            <img src="../../assets/images/preloader.svg" width="50" height="50" alt="" />
+            <img src="../assets/images/preloader.svg" width="50" height="50" alt="" />
         </div>
     </div>
 
@@ -50,14 +50,14 @@
     <header class="header" header-data>
         <div class="container">
             <a href="#" class="logo">
-                <img src="../../assets/images/logo.png" alt="logo" width="187" height="38" />
+                <img src="../assets/images/logo.png" alt="logo" width="187" height="38" />
             </a>
 
             <nav class="navbar" data-navbar>
                 <!--navbaar top-->
                 <div class="navbar-top">
                     <a href="#" class="logo">
-                        <img src="../../assets/images/logo.png" alt="logo" width="187" height="38" />
+                        <img src="../assets/images/logo.png" alt="logo" width="187" height="38" />
                     </a>
 
                     <button class="nav-toggle-btn" aria-label="close menu" data-nav-toggler onclick="closeMenu()">
@@ -67,24 +67,24 @@
                 <!--menu icons-->
                 <ul class="navbar-list">
                     <li class="navbar-item">
-                        <a href="../../index.html" class="navbar-link ">Home</a>
+                        <a href="../index.html" class="navbar-link ">Home</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="../Room.html" class="navbar-link active" style="display:flex;">Rooms->Room02</a>
+                        <a href="../Rooms/Room.html" class="navbar-link">Rooms</a>
                     </li>
                     <li class="navbar-item">
                         <a href="#" class="navbar-link">Services</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="../../About/About.html" class="navbar-link">About</a>
+                        <a href="../About/About.html" class="navbar-link active">About</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="../../Contact/ContactUs.html" class="navbar-link">Contact</a>
+                        <a href="#" class="navbar-link">Contact</a>
                     </li>
                 </ul>
                 <!--header action-->
                 <div class="header-action">
-                    <a href="../../Registration/Registration.html" class="btn btn-primary">LogIn</a>
+                    <a href="../Registration/Registration.html" class="btn btn-primary">LogIn</a>
                 </div>
             </nav>
 
@@ -102,74 +102,202 @@
                 header
             -->
             <section class="section hero has-bg-image" aria-label="hero"
-                style="background-image: url(../../assets/images/hero-bg.jpg)">
+                style="background-image: url(../assets/images/hero-bg.jpg)">
                 <div class="container">
                     <div class="hero-content">
+                        <p class="hero-subtitle">
+                            Explore Sri Lanka 🌎
+                        </p>
 
-                        <h1 class="h1 title">
-                            Room 02
+                        <h1 class="h1 title hero-title">
+                            You Lookig a place to Stay? Join with us
                         </h1>
-                        <br>
-                        <ul class="room-ul">
-                            <li class="room-li">
-                                Room Size -> <span style="color: hsl(249, 95%, 63%);">🏚️ 200 SQ</span>
-                            </li>
-                            <li class="room-li">
-                                Comfotable For -> <span style="color: hsl(249, 95%, 63%);">😊 4 Persons</span>
-                            </li>
-                            <li class="room-li">
-                                Price -><span style="color: hsl(249, 95%, 63%);">💕 150$ / Day</span>
-                            </li>
-                        </ul>
-                        <br>
 
-                        <figure class="hero-banner mobile">
-                            <iframe class="w-100" alt="" width="631" height="276"
-                                style="border-radius: 10px; box-shadow: 0 0 0 4px #00000033;"
-                                src="https://momento360.com/e/u/6954667f00a34b518720eef09dfabfe5?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true"
-                                frameborder="0"></iframe>
-                        </figure>
-                        <br>
+                        <p class="hero-text">
+                            We always make our customer happy by providing as many choices
+                            as possible
+                        </p>
+
                         <div class="wrapper">
-                            <a href="#imagesMore" class="btn btn-secondary">
-                                <span class="span" style="text-transform: uppercase;">inquire now</span>
+                            <a href="#" class="btn btn-secondary">
+                                <span class="span">Find Now</span>
                                 <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
                             </a>
+
+                            <button class="hero-btn">
+                                <div class="btn-img">
+                                    <img src="../assets/images/hero-button-img.jpg" alt="" width="100" height="100"
+                                        class="img-cover" />
+                                    <ion-icon name="play" aria-hidden="true"></ion-icon>
+                                </div>
+
+                                <p class="text">Watch our Story</p>
+                            </button>
                         </div>
                     </div>
 
-                    <figure class="hero-banner pc">
-                        <iframe class="w-100" alt="" width="631" height="276"
-                            style="border-radius: 10px; box-shadow: 0 0 0 4px #00000033;"
-                            src="https://momento360.com/e/u/6954667f00a34b518720eef09dfabfe5?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true"
-                            frameborder="0"></iframe>
+                    <figure class="hero-banner">
+                        <img src="../assets/images/hero-banner.png" class="w-100" alt="" width="631" height="735" />
                     </figure>
                 </div>
             </section>
 
-            <section class="section imgmore" id="imagesMore">
-                <h1 class="h1 title">
-                    More Images
-                </h1>
-                <p>🥰There are More Images to get a clear idea about our room number 02.🥰</p>
-                <div class="img">
-                    <div class="img-container">
-                        <img src="../../assets//images/room2.jpg" alt="">
-                    </div>
-
-                    <div class="img-container">
-                        <img src="../../assets//images/room2.jpg" alt="">
-                    </div>
-
-                    <div class="img-container">
-                        <img src="../../assets//images/room2.jpg" alt="">
-                    </div>
-
-                    <div class="img-container">
-                        <img src="../../assets//images/room2.jpg" alt="">
+            <!--
+                contsct us
+            -->
+            <section class="section contactus">
+                <div class="contact-container">
+                    <div class="content">
+                        <div class="image-box">
+                            <img src="../assets/images/contact.png" alt="" />
+                        </div>
+                        <form action="#">
+                            <div class="topic">Send us a message</div>
+                            <div class="input-box">
+                                <input type="text" required />
+                                <label>Enter your name</label>
+                            </div>
+                            <div class="input-box">
+                                <input type="text" required />
+                                <label>Enter your email</label>
+                            </div>
+                            <div class="input-box">
+                                <input type="text" required />
+                                <label>Enter your Massage</label>
+                            </div>
+                            <div class="input-box">
+                                <input type="submit" value="Send Message" />
+                            </div>
+                        </form>
                     </div>
                 </div>
             </section>
+           
+
+
+            <!--
+                services
+            -->
+            <section class="section service">
+                <div class="container">
+                    <div class="title-wrapper">
+                        <p class="section-subtitle">What We Serve</p>
+                        <h2 class="h2 title title-section">Top Values For You</h2>
+                        <p class="section-text">
+                            Try a variety of benefits when using our villa service.
+                        </p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="icon-card">
+                            <img src="../assets/images/service-icon-1.svg" width="60px" height="60px" loading="lazy"
+                                alt="" />
+                        </div>
+
+                        <h3 class="h3 title card-title">3 Bed-Room Villa</h3>
+                        <p class="card-text">
+                            Total 460+ living area with all facilities.
+                        </p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="icon-card">
+                            <img src="../assets/images/service-icon-2.svg" width="60px" height="60px" loading="lazy"
+                                alt="" />
+                        </div>
+
+                        <h3 class="h3 title card-title">Memorable Vacation</h3>
+                        <p class="card-text">
+                            TBest way to spen your vaction.
+                        </p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="icon-card">
+                            <img src="../assets/images/service-icon-3.svg" width="60px" height="60px" loading="lazy"
+                                alt="" />
+                        </div>
+
+                        <h3 class="h3 title card-title">Easy Booking</h3>
+                        <p class="card-text">
+                            With an easy and fast ticket purchase process.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!--
+            Experience
+        -->
+
+            <section class="section exp" area-lable="Experience">
+                <div class="container">
+                    <div class="exp-content">
+                        <p class="section-subtitle">
+                            Our Experience
+                        </p>
+
+                        <h2 class="h2 title section-title">
+                            With Our Experience We Will Serve You
+                        </h2>
+
+                        <p class="section-text">
+                            Since we first opened we have always prioritized the convenience of our users by providing
+                            low prices and with a
+                            easy
+                            process.
+                        </p>
+
+                        <ul class="exp-list">
+                            <li class="exp-item">
+                                <h3 class="h3 title item-title">
+                                    20
+                                </h3>
+
+                                <p class="item-text">
+                                    Years <br>
+                                    Experience
+                                </p>
+                            </li>
+                            <li class="exp-item">
+                                <h3 class="h3 title item-title">
+                                    3+
+                                </h3>
+
+                                <p class="item-text">
+                                    Comfotable <br>
+                                    Bed Rooms
+                                </p>
+                            </li>
+                            <li class="exp-item">
+                                <h3 class="h3 title item-title">
+                                    50 sq+
+                                </h3>
+
+                                <p class="item-text">
+                                    Mind-relaxing <br>
+                                    Garden
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <figure class="exp-banner">
+                        <img src="../assets/images/experience-banner.png" alt="" class="w-100" width="550" height="660">
+                        <img src="../assets/images/exp-shape.svg" width="75" height="
+                    109" loading="lazy" alt="" class="exp-shape">
+                    </figure>
+                </div>
+            </section>
+
+
+
+
+
+            <!--
+            I alreay skipping that destination part because I dont need it
+        -->
+
 
 
         </article>
@@ -186,8 +314,7 @@
 
                 <div class="footer-brand">
                     <a href="#" class="logo">
-                        <img src="../../assets/images/logo.png" alt="" class="logo" width="187" height="40"
-                            loading="lazy">
+                        <img src="../assets/images/logo.png" alt="" class="logo" width="187" height="40" loading="lazy">
                     </a>
                     <p class="footer-text">
                         We always make our customer
@@ -353,7 +480,7 @@
         end of landing page
     -->
     <!--custome js icons-->
-    <script src="../../assets/js/script.js"></script>
+    <script src="../assets/js/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
