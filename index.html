@@ -102,11 +102,15 @@
             <li class="navbar-item">
               <a href="./Contact/ContactUs.html" class="navbar-link">Contact</a>
             </li>
+            <li class="navbar-item" style="display: block;" onclick="openAdmin()">
+              <a href="#" class="navbar-link" onlicik="openAdmin()">Admin</a>
+            </li>
           </ul>
           <!--header action-->
-          <div class="header-action">
+          <div class="header-action" style="display:block;">
             <a href="./Registration/Registration.html" class="btn btn-primary">LogIn</a>
           </div>
+          <img src="./assets/images/k.jpg" width="50px" height="50px" style="border-radius: 100%;display: none;" alt="">
         </nav>
 
         <button
@@ -600,5 +604,32 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+
+    <!--
+      sweet alert
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!--
+      scripts for sweet alert
+    -->
+    <script>
+      function openAdmin(){
+        Swal.fire({
+          title: "Are you sure?",
+          text: "Do you want to switch Admin Dashbord",
+          icon: "warning",
+          showCancelButton: true,
+          confirmButtonColor: "#3085d6",
+          cancelButtonColor: "#d33",
+          confirmButtonText: "Yes, Switch Now!"
+        }).then((result) => {
+          if (result.isConfirmed) {
+            location.href="./Admin/Admin.html";
+          }
+        });
+      }
+    </script>
   </body>
 </html>
