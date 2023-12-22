@@ -229,8 +229,7 @@ aria-label = send a message
 <ion-icon name="paper-plane-outline" aria-hidden="true"></ion-icon>
 
 Copyright 2023. Made by
-href = https://youtube.com/@codewithsadee
-codewithsadee
+@SachinUthpala
 
 Terms and Condition
 Privacy and Policy
