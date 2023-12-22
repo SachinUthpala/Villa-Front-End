@@ -854,49 +854,51 @@ img {
   }
 }
 
-.pc{
+.pc {
   display: none;
 }
 
-    /*-----------------------------------*\
+/*-----------------------------------*\
       #Room galary
     \*-----------------------------------*/
 
-.imgmore{
+.imgmore {
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 10px 20px;
 }
 
-.img{
+.img {
   display: flex;
   flex-direction: column;
 }
 
-.imgmore h1 , p{
+.imgmore h1,
+p {
   text-align: center;
   margin-bottom: 20px;
 }
 
-.imgmore .img-container img{
+.imgmore .img-container img {
   width: 253px;
   height: 203px;
   margin-block-end: 20px;
   border-radius: 10px;
-  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 
-        /*-----------------------------------*\
+/*-----------------------------------*\
           #Room galary
         \*-----------------------------------*/
 
-.about{
+.about {
   padding: 10px 10px;
 }
 
-.person{
-  background:url(../images/hero-bg.jpg);
+.person {
+  background: url(../images/hero-bg.jpg);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -905,9 +907,44 @@ img {
   background-size: cover;
 }
 
-.person img{
+.person img {
   width: 250px;
   border-radius: 10px;
+}
+
+/*-----------------------------------*\
+      #CUSTOM Galary
+    \*-----------------------------------*/
+
+.gallary {
+  padding: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallary .container {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.gallary .container .img-card {
+  position: relative;
+  width: 100%;
+}
+
+.gallary .container .img-card img {
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.gallary .container .img-card img:hover {
+  box-shadow: rgba(0, 0, 0, 0.261) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.335) 0px 4px 8px -1px;
 }
 
 /*responsive for 768px*/
@@ -1004,14 +1041,21 @@ img {
     padding: 10px 30px;
   }
 
-  .img{
+  .img {
     display: grid;
-    grid-template-columns: repeat(2 , 300px);
+    grid-template-columns: repeat(2, 300px);
     justify-content: space-between;
     padding: 50px 70px;
   }
-  
 
+  .gallary .container {
+    display: grid;
+    grid-template-columns: repeat(2, 340px);
+  }
+
+  /* .gallary .container .img-card{
+      width: 50%;
+    } */
 }
 
 /*responsive for 992px  */
@@ -1126,20 +1170,20 @@ img {
     border-radius: var(--radius-pill);
   }
 
-            .pc {
-              display: block;
-            }
-      
-            .mobile {
-              display: none;
-            }
+  .pc {
+    display: block;
+  }
 
-                        .img {
-                          display: grid;
-                          grid-template-columns: repeat(3, 300px);
-                          justify-content: space-between;
-                          padding: 50px 70px;
-                        }
+  .mobile {
+    display: none;
+  }
+
+  .img {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    justify-content: space-between;
+    padding: 50px 70px;
+  }
 }
 
 /*responsive for 1200px */
@@ -1191,30 +1235,34 @@ img {
     gap: 40px;
   }
 
+  .rooms .container img {
+    margin-block-start: 40px;
+    width: 900px;
+  }
 
-    .rooms .container img {
-      margin-block-start: 40px;
-      width: 900px;
-    }
+  .rooms .secondary-text {
+    font-size: larger;
+  }
 
-    .rooms .secondary-text{
-      font-size: larger;
-    }
+  .pc {
+    display: block;
+  }
 
-                .pc {
-                  display: block;
-                }
-        
-                .mobile {
-                  display: none;
-                }
+  .mobile {
+    display: none;
+  }
 
-                                .img {
-                                  display: grid;
-                                  grid-template-columns: repeat(4, 300px);
-                                  justify-content: space-between;
-                                  padding: 50px 70px;
-                                }
+  .img {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    justify-content: space-between;
+    padding: 50px 70px;
+  }
+
+  .gallary .container {
+    display: grid;
+    grid-template-columns: repeat(3, 290px);
+  }
 }
 
 /*responsive for max width 1400px */
@@ -1228,32 +1276,39 @@ img {
     width: 100%;
   }
 
-    .rooms .secondary-text {
-      font-size: larger;
-    }
+  .rooms .secondary-text {
+    font-size: larger;
+  }
 
-    .pc{
-      display: block;
-    }
+  .pc {
+    display: block;
+  }
 
-    .mobile{
-      display: none;
-    }
+  .mobile {
+    display: none;
+  }
 
-        .img {
-          display: grid;
-          grid-template-columns: repeat(4, 300px);
-          justify-content: space-between;
-          padding: 50px 70px;
-        }
+  .img {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    justify-content: space-between;
+    padding: 50px 70px;
+  }
+
+  .gallary {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+  .gallary .container {
+    display: grid;
+    grid-template-columns: repeat(2, 340px);
+  }
 }
-
-
-
 
 /*css for contact us*/
 
-.contactus{
+.contactus {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1338,8 +1393,8 @@ img {
   transition: all 0.3s ease;
 }
 
-.content .input-box input:focus~label,
-.content .input-box input:valid~label {
+.content .input-box input:focus ~ label,
+.content .input-box input:valid ~ label {
   top: 0;
   left: 12px;
   display: 14px;
@@ -1380,7 +1435,7 @@ img {
   transition: all 0.3s ease;
 }
 
-.content .message-box textarea:focus~label {
+.content .message-box textarea:focus ~ label {
   left: 12px;
   top: -10px;
   color: #ba24c2;
@@ -1416,20 +1471,19 @@ img {
     text-align: center;
   }
 
-  .contact-container{
+  .contact-container {
     margin: 0px;
     padding: 20px 0px;
   }
 
-    .content .input-box input{
-      width: 78%;
-    }
+  .content .input-box input {
+    width: 78%;
+  }
 
-    .topic{
-      position: relative;
-      margin-right: 30px;
-    }
-
+  .topic {
+    position: relative;
+    margin-right: 30px;
+  }
 }
 
 @media (max-width: 900px) {
